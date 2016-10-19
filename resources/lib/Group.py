@@ -1,25 +1,21 @@
-# TODO: bessere Lösung für Settings
-
 from Logger import Logger
 from Light  import Light
 
 
 class Group():
   
-    lights = {}
+    hue           = 0
+    saturation    = 0
+    brightness    = 0
+    lights        = {}
+    logger        = Logger()
+    
 
-    def __init__(self, settings, bridge):
+    def __init__(self, group_id, bridge, settings):
         self.logger = Logger()
       
         self.id     = settings.group_id
         self.bridge = bridge
-        
-        # TODO
-        self.on =
-        self.brightness = 
-        self.hue = 
-        self.saturation = 
-        
         
         self.discover_lights()
 
@@ -48,6 +44,7 @@ class Group():
             self.on         = False
             
         self.bridge.send_group_update(self, duration)
+
 
     # def dim_light(self):
     #     for light in self.lights:

@@ -1,5 +1,5 @@
 import xbmc
-
+from Settings import SETTINGS
 
 class Logger:
   script_name   = 'Kodi Hue'

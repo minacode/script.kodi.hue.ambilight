@@ -1,4 +1,4 @@
-# Constants
+# Color
 
 CYAN_MIN = float( 4.5  / 12.0 )
 CYAN_MAX = float( 7.75 / 12.0 )

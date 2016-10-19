@@ -1,4 +1,11 @@
+from Logger import Logger
+
 class Hue:
+  
+    bridge = None
+    lights = {}
+    groups = {}
+    logger = Logger()
   
     params     = None
     connected  = None
@@ -8,10 +15,6 @@ class Hue:
 
 
     def __init__(self, settings, args):
-        self.logger = Logger()
-        if settings.debug:
-            self.logger.debug()
-    
         self.settings = settings
         self._parse_argv(args)
     
@@ -147,6 +150,7 @@ class Hue:
     def update_settings(self):
         self.logger.debuglog('class Hue: update settings')
         self.logger.debuglog(settings)
+        
         if self.settings.light == 0 and \
               (self.light is None or type(self.light) != Group):
             self.logger.debuglog('creating Group instance')
