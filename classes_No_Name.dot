@@ -1,9 +1,0 @@
-digraph "classes_No_Name" {
-charset="utf-8"
-rankdir=BT
-"0" [label="{HSVRatio|cyan_max : float\lcyan_min : float\lh : float\lratio : float\ls : float\lv : float\l|average()\laverageValue()\lhue()\l}", shape="record"];
-"1" [label="{Hue|connected : NoneType\lconnected : bool\ldim_group : NoneType\llast_state : NoneType\llast_state : str\llight\llight : NoneType\lparams : NoneType\lparams : dict\lsettings\l|brighter_lights()\ldim_lights()\lflash_lights()\lpartial_lights()\lstart_autodiscover()\ltest_connection()\lupdate_settings()\l}", shape="record"];
-"2" [label="{MyMonitor|\l|onSettingsChanged()\l}", shape="record"];
-"3" [label="{MyPlayer|duration\lduration : int\lplayingvideo : NoneType\lplayingvideo : bool\l|onPlayBackEnded()\lonPlayBackPaused()\lonPlayBackResumed()\lonPlayBackStarted()\lonPlayBackStopped()\l}", shape="record"];
-"4" [label="{Screenshot|capture_height\lcapture_width\lpixels\l|most_used_spectrum()\lspectrum_hsv()\l}", shape="record"];
-}

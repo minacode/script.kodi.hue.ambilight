@@ -1,0 +1,1 @@
+<setting id="light{id}" label="{label}" type="bool" default="true"/>
