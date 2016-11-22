@@ -20,13 +20,11 @@ class Settings():
 
 
     def open_template_file(self, file):
-        global self.ADDON_PATH
         return open('{path}recources/templates/{file}'.format(
             path = self.ADDON_PATH, file = file))
 
 
     def open_settings_file(self, mode = 'w'):
-        global self.ADDON_PATH
         return open('{path}recources/settings.xml'.format(path = self.ADDON_PATH), mode)
 
 
