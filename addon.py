@@ -11,7 +11,9 @@ LIB_PATH = xbmc.translatePath(os.path.join(ADDON_PATH, 'resources', 'lib'))
 
 sys.path.append(LIB_PATH)
 
+from Logger import Logger
 from Settings import Settings
+from Hue import Hue
 from HuePlayer import HuePlayer
 from HueMonitor import HueMonitor
 from HSVRatio import HSVRatio
